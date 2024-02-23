@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marciano Beef</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- bootstrap link -->
+    
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons -->
+<style>
+    body{
+        background-color: #202124;
+    }
+    *{
+    margin: 0;
+    padding: 0;
+}
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: #E7CB8A;
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+    color: #E7CB8A;
+    
+    
+
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+/* navbar top */
+
+/* main content */
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./image/carne-fundo.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+
+/* navbar */
+#navbar-color{
+    background-color: #202124;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: #E7CB8A;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: #FEFDFF;
+}
+/* navbar */
+
+/* content */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1{
+    font-size: 50px;
+}
+
+
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+/* content */
+
+/* main content */
+
+/* card1 */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  background-color: #202124;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+/* card1 */
+
+/* card2 */
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-10px);
+}
+/* card2 */
+
+/* card3 */
+.card3-img-top{
+            border-radius: 50px;
+            padding: 20px;
+        }
+        .card3{
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+        .card-body{
+            padding: 25px;
+            margin: -15;
+
+        }
+        .btn-primary{
+            border-radius: 50px;
+            width: 120px;
+        }
+        .btn-primary:hover{
+            background-color: black;
+        }
+        h1,h5,h3{
+            color: #E7CB8A;
+        }
+        p{
+            color: #FEFDFF;
+        }
+/* card3 */
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    background-color: rgba(238,224,208);
+}
+/* footer */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
+</style>
+
+</head>
+<body>
+    <!-- navbar top -->
+    <div class="container">
+        <div class="navbar-top">
+            <div class="social-link">
+                <i><img src="./image/google-plus.png" alt="" width="30px"></i>
+                <i><img src="./image/facebook.png" alt="" width="30px"></i>
+            </div>
+            <div class="logo">
+                <span><h3>MARCIANO BEEF</h3></span>
+            </div>
+            <div class="icons">
+                <i><img src="./image/login.webp" alt="" width="30px"></i>
+            </div>
+        </div>
+    </div>
+    <!-- navbar top -->
+
+    <!-- main content -->
+    <div class="main-content">
+        <nav class="navbar navbar-expand-md" id="navbar-color">
+           <div class="container">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><i><img src="./image/menu.png" alt="" width="30px"></i></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CARDÁPIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PROMOÇÕES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">RECEITAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">POLÍTICA DE ENTREGA E PAGAMENTO</a>
+                </li>
+              </ul>
+            </div>
+           </div> 
+          </nav>
+
+          <div class="content">
+            <h1>Make Your Home
+                <br> Modern Design.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minus modi illum cumque velit consectetur?</p>
+            <button type="button" class="btn btn-light">Light</button>
+          </div>
+
+    </div>
+    <!-- main content -->
+
+
+    <!-- card1 -->
+    <div class="container">
+        <h3 class="text-center" style="padding-top: 30px; color: #E7CB8A;">CORTES DE CARNE</h3>
+        <div class="row" style="margin-top: 50px;">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card">
+              <img src="./image/bacon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Saiba mais
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./image/bacon.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At illum nam eius voluptatibus culpa explicabo nemo et. Ad temporibus, iste similique voluptate non quo nesciunt dicta quaerat, sed sequi reiciendis.
+          Dolores, assumenda perferendis iste voluptatum dolor amet fuga, ab nihil omnis veniam nostrum deserunt numquam officia culpa consequatur aliquam modi vero totam id repudiandae. Harum, ut dicta! Corrupti, fuga harum.
+          Dolor similique dolorem quidem eos et expedita quibusdam placeat aspernatur perspiciatis fuga, provident cupiditate totam officiis alias non deserunt corrupti excepturi exercitationem facilis iusto? Consequuntur doloremque amet incidunt veniam et.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="./image/bife.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="./image/contrafile.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="./image/costela.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="./image/file.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="./image/peito_de_frango.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="./image/peixe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="./image/picanha.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="./image/salsicha.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </div>
+    </div>
+    <!-- card1 -->
+<hr>
+    <!-- card2 -->
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./image/costela.jpg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel" style="color: #E7CB8A;">COSTELA</h4>
+                        <p class="card-text" style="color: #FEFDFF;">Lorem ipsum dolor.</p>
+                        <button type="button" class="btn btn-outline-light">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./image/contrafile.jpg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel" style="color: #E7CB8A;">CONTRA FILÉ</h4>
+                        <p class="card-text" style="color: #FEFDFF;">Lorem ipsum dolor.</p>
+                        <button type="button" class="btn btn-outline-light">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./image/picanha.jpg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel" style="color: #E7CB8A;">PICANHA</h4>
+                        <p class="card-text" style="color: #FEFDFF;">Lorem ipsum dolor.</p>
+                        <button type="button" class="btn btn-outline-light">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card2 -->
+<hr>
+    <!-- card3 -->
+     <!-- card3 -->
+     <div class="container py-5">
+        <h1 class="text-center">OFERTAS</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <div class="col">
+                <div class="card3">
+                    <img src="./image/file.jpg" class="card3-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <h5 class="card-title">FILÉ</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>190$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card3">
+                    <img src="./image/bacon.jpg" class="card3-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <h5 class="card-title">TIRAMISU CAKE</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>190$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card3">
+                    <img src="./image/costela.jpg" class="card3-img-top" alt="..." width="350px">
+                    <div class="card-body">
+                        <h5 class="card-title">TIRAMISU CAKE</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>190$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="card3">
+                  <img src="./image/file.jpg" class="card3-img-top" alt="..." width="350px">
+                  <div class="card-body">
+                      <h5 class="card-title">FILÉ</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                          dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>190$</h3>
+                      <button class="btn btn-primary">Buy Now</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card3">
+                  <img src="./image/bacon.jpg" class="card3-img-top" alt="..." width="350px">
+                  <div class="card-body">
+                      <h5 class="card-title">TIRAMISU CAKE</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                          dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>190$</h3>
+                      <button class="btn btn-primary">Buy Now</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card3">
+                  <img src="./image/costela.jpg" class="card3-img-top" alt="..." width="350px">
+                  <div class="card-body">
+                      <h5 class="card-title">TIRAMISU CAKE</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                          dignissimos accusantium amet similique velit iste.</p>
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+                      <h3>190$</h3>
+                      <button class="btn btn-primary">Buy Now</button>
+                  </div>
+              </div>
+          </div>
+
+
+           
+    <!-- card3 -->
+    <!-- card3 -->
+<hr>
+    <!-- about -->
+    <div class="container">
+        <h1 class="text-center" style="margin-top: 50px; color: #E7CB8A;">SOBRE NÓS</h1>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/sobre-nos.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <p style="color: #FEFDFF;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, saepe possimus quo, quasi animi natus nulla beatae neque soluta pariatur id ducimus eum, sed quis enim minima? Fugiat delectus quo optio nemo voluptatem ullam officiis neque exercitationem tenetur eum corporis quas in esse blanditiis, quasi animi nam eos! Tempora deleniti eligendi magni ex voluptatum ut dicta nemo et consequuntur distinctio quae atque porro inventore assumenda, nihil odio iusto accusamus libero error nam aut, at praesentium cum reiciendis. Possimus consequatur obcaecati at illum in dolores earum vero ipsum. Ipsam vitae adipisci corrupti totam vel consequuntur fugiat. Perferendis fuga doloremque tempora, in eos, voluptates iure, optio qui modi ex ea saepe. Eum perspiciatis, voluptates fugiat nesciunt corrupti minima aliquam repellat, ea quasi natus, recusandae aut nobis modi. Commodi, alias reiciendis reprehenderit hic soluta consectetur corporis accusantium placeat, totam minima nostrum magnam dolorum aut dolore, sapiente ea. Magni est quo ipsam nisi iste.</p>
+                <button type="button" class="btn btn-light">Light</button>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+<hr>
+    <!-- footer -->
+    <footer id="footer">
+        <h1 class="text-center">Marciano Beef</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong><span>Marciano Beef</span></strong>. All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Designed By <a href="#">SA Coding</a>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+</body>
+</html>
